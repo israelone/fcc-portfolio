@@ -1,15 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from '../../resources/Logo/izzydevlogo.svg';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../Logo/logo";
 
 const Container = styled.footer`
   padding: 40px 0;
   background-color: #3da9fc;
-`;
-
-const Logo = styled.img`
-  width: 50px;
-  margin: 0 10px;
 `;
 
 const IconsContainer = styled.div`
@@ -100,7 +95,7 @@ const Footer = () => {
       </NavigationList>
       <CreatedByContainer>
         <Paragraph>Created By:</Paragraph>
-        <Logo src={Image} />
+        <Logo width="50px" height="50px" />
       </CreatedByContainer>
     </Container>
   );
