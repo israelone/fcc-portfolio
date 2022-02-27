@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.section`
   background-color: #fffffe;
@@ -19,10 +19,11 @@ const About = () => {
     <Container id="about">
       <Header>Hello!</Header>
       <Introduction>
-        Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        My name is Israel Lopez, I'm an Enthusiastic and detail-oriented
+        Front-End Developer who is comfortable working with JavaScript,
+        HTML/CSS, and React looking to leverage my experience building
+        responsive and scalable web apps to solve interesting problems that
+        delight end-users.
       </Introduction>
     </Container>
   );
