@@ -31,14 +31,8 @@ const GoBackTopButton = styled(Button)`
   bottom: 20px;
 `;
 
-const MenuButton = styled(Button)``;
-
 const App = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const [currentView, setCurrentView] = useState(0);
-  const showMenuToggle = () => {
-    setShowMenu(!showMenu);
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
@@ -59,10 +53,6 @@ const App = () => {
 
   return (
     <>
-      <MenuButton
-        onClick={() => showMenuToggle()}
-        className={showMenu ? "fas fa-times" : "fas fa-bars"}
-      />
       {currentView !== 0 && (
         <GoBackTopButton
           onClick={() =>
@@ -74,7 +64,7 @@ const App = () => {
           className="fas fa-chevron-up"
         ></GoBackTopButton>
       )}
-      <NavBar showMenu={showMenu} />
+      <NavBar />
       <Home />
       <About />
       <Skills />
