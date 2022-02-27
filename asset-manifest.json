@@ -1,24 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e533bfe8.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.ac7bf622.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.ac7bf622.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.3d0a49be.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.3d0a49be.js.map",
-    "static/js/2.7afdf58f.chunk.js": "/react-portfolio/static/js/2.7afdf58f.chunk.js",
-    "static/js/2.7afdf58f.chunk.js.map": "/react-portfolio/static/js/2.7afdf58f.chunk.js.map",
-    "static/js/3.81425ae4.chunk.js": "/react-portfolio/static/js/3.81425ae4.chunk.js",
-    "static/js/3.81425ae4.chunk.js.map": "/react-portfolio/static/js/3.81425ae4.chunk.js.map",
-    "index.html": "/react-portfolio/index.html",
-    "static/css/main.e533bfe8.chunk.css.map": "/react-portfolio/static/css/main.e533bfe8.chunk.css.map",
-    "static/js/2.7afdf58f.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.7afdf58f.chunk.js.LICENSE.txt",
-    "static/media/e-commerce.7110b0b6.png": "/react-portfolio/static/media/e-commerce.7110b0b6.png",
-    "static/media/izzydevlogo.b9144819.svg": "/react-portfolio/static/media/izzydevlogo.b9144819.svg"
+    "main.css": "/fcc-portfolio/static/css/main.795bc32c.css",
+    "main.js": "/fcc-portfolio/static/js/main.c6a4ceba.js",
+    "static/js/377.2bf5b29e.chunk.js": "/fcc-portfolio/static/js/377.2bf5b29e.chunk.js",
+    "static/media/e-commerce.png": "/fcc-portfolio/static/media/e-commerce.7110b0b6febda467e192.png",
+    "index.html": "/fcc-portfolio/index.html",
+    "main.795bc32c.css.map": "/fcc-portfolio/static/css/main.795bc32c.css.map",
+    "main.c6a4ceba.js.map": "/fcc-portfolio/static/js/main.c6a4ceba.js.map",
+    "377.2bf5b29e.chunk.js.map": "/fcc-portfolio/static/js/377.2bf5b29e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d0a49be.js",
-    "static/js/2.7afdf58f.chunk.js",
-    "static/css/main.e533bfe8.chunk.css",
-    "static/js/main.ac7bf622.chunk.js"
+    "static/css/main.795bc32c.css",
+    "static/js/main.c6a4ceba.js"
   ]
 }
