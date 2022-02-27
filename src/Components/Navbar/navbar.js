@@ -1,29 +1,32 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Logo from "../Logo/logo";
 
-const Container = styled.nav`
+const Nav = styled.nav`
   position: fixed;
   background-color: #094067;
-  height: 100%;
-  width: 225px;
+  width: 100%;
   top: 0;
-  right: ${(props) => (props.show ? '0' : '-225px')};
+  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   -webkit-box-shadow: -2px 0px 6px 0px #000000;
   box-shadow: -2px 0px 6px 0px #000000;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-const Header = styled.h1`
-  margin: 0;
-  background-color: #fffffe;
-  padding: 15px;
-  cursor: pointer;
-  color: #094067;
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const NavigationList = styled.ul`
-  padding: 0;
-  margin: 0;
+  display: flex;
   list-style: none;
 `;
 
@@ -40,31 +43,40 @@ const NavigationItem = styled.li`
   }
 `;
 
-const NavBar = (props) => {
+const NavBar = () => {
   return (
-    <Container show={props.showMenu}>
-      <Header>Izzy Dev</Header>
-      <NavigationList>
-        <NavigationItem>
-          <NavigationLink href="#home">Home</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink href="#about">About</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink href="#skills">Skills</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink>Resume</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink href="#projects">Portfolio</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink href="#contact">Contact</NavigationLink>
-        </NavigationItem>
-      </NavigationList>
-    </Container>
+    <Nav id="navbar">
+      <Container>
+        <Logo
+          width="50px"
+          height="50px"
+          color="#ffffff"
+          style={{ marginLeft: "50px" }}
+        />
+        <NavigationList>
+          <NavigationItem>
+            <NavigationLink href="#welcome-section" rel="tag" target="_blank">
+              Home
+            </NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink href="#about">About</NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink href="#skills">Skills</NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink>Resume</NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink href="#projects">Portfolio</NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink href="#contact">Contact</NavigationLink>
+          </NavigationItem>
+        </NavigationList>
+      </Container>
+    </Nav>
   );
 };
 
