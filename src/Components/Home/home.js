@@ -1,6 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from '../../resources/Logo/izzydevlogo.svg';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.section`
   font-size: 25px;
@@ -43,7 +42,7 @@ const Paragraph = styled.p`
 const Header = styled.h1`
   margin: 0;
   letter-spacing: 7px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   color: #094067;
 `;
 
@@ -59,11 +58,20 @@ const Button = styled.button`
 
 const Home = () => {
   return (
-    <Container id="home">
-      <Logo src={Image} />
+    <Container id="welcome-section">
       <Header>Israel Lopez</Header>
       <Paragraph>Front End Developer</Paragraph>
-      <Button>About Me</Button>
+      <Button>
+        <a
+          id="profile-link"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/israelone"
+          style={{ textDecoration: "none", color: "#094067" }}
+        >
+          Github Profile
+        </a>
+      </Button>
     </Container>
   );
 };
